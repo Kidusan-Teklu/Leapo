@@ -1,0 +1,72 @@
+// var name=prompt("enter your name");
+// var fn=name.slice(0,1);
+// Sfn =fn.toUpperCase();
+// var ln =name.slice(1,50);
+// ln = ln.toLowerCase();
+// name =fn +ln;
+// alert(name);
+//  var kg=prompt("enter your weight in kg");
+// var m=prompt("enter your height in meter");
+// m=m**2; // i can use Math.pow(4,2); to power it 
+// var bmi=kg/m;
+//     alert("Your BMI is: " + bmi);
+
+//using function
+
+// function bmicalcultor(weight,height)
+// {
+//     var bmi=weight/(height**2)
+
+//     return Math.round(bmi);
+// }
+// var k=prompt("enter your weight in kg");
+// var m=prompt("enter your height in meter");
+// alert("Your BMI is: " + bmicalcultor(k,m));
+
+/****** the difference between Math.floor and Math.round is that the floor roundes a number to the nearest 
+integer that is less than or equal to the number while thr math.round() roundes a number to the nearest 
+integer*******/
+/* Pseudo Random number genertor Math.random();used to get random number between 0-0.9999999
+
+var n =Math.random();
+n=n*6; //we multiply it to the number we need to get random numbers between 
+// n+=1; //to make it include the upper bound
+n= Math.floor(n+1); // to make it cut out the flooting numbers
+
+console.log(n);
+love calculetor 
+*/
+// //love calculator using random number
+// var male =prompt("enter your name :");
+// var female =prompt("Enter your mate's name :");
+// var love =Math.random();
+love =love*100;
+//love+=1;
+// love =Math.floor(love+1);
+
+// if (love >70){
+//     alert("the love score of " +male +" & " + female + " is " + love + "%"+ " you love each other like seblewengel  and x.");
+// } 
+// if(love>30 && love<70){
+//      alert("the love score of " +male +" & " + female + " is " + love + "%.");
+// }
+    
+// if(love<=30){ 
+//     alert("the love score of " +male +" & " + female + " is " + love + "%" + "you go together like oil and water.");
+// }
+
+function leapyear(year){
+    if (year%4 !==0)
+    {
+        alert(year +" is not a leap year. because it is not divisible by 4")
+    }20
+    if (year%4===0&&year%100===0 && year%400===0){
+ alert(year +" is a leap year. becouse it is divisible by 4,100,400 with out remainder")
+    }
+ if (year%4===0&&year%100===0 && year%400!==0){
+ alert(year +" is not a leap year. becouse it is devisible by 4 & 100 with out remainder but not by 400")
+    }
+}
+var year=prompt("enter a year that you went to to check if it is a leap year :");
+leapyear(year);
+
